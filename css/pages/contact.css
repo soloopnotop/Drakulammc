@@ -1,0 +1,323 @@
+@import "css/global.css";
+
+
+#header {
+    background: url("../../images/header-background.jpg") no-repeat fixed center;
+    min-width: 100%;
+    min-height: 400px;
+    height: 30vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+#header .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 150px;
+    width: 100%;
+}
+
+#header .content .info {
+    display: flex;
+    flex-direction: column;
+}
+
+#header .content .info .minecraft-server-ip {
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#header .content .info .title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 900;
+}
+
+#header .content .info .title span {
+    color: red;
+}
+
+#header .content .description {
+    color: #D2D0D0;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+
+#contacts .content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#contacts .content .section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+}
+
+#contacts .content .section-title::before {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    width: 150px;
+    height: 1px;
+    border-radius: 5px;
+    background: #D2D0D0;
+}
+
+#contacts .content .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    border-radius: 5px;
+    background: red;
+}
+
+#contacts .content .columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+#contacts .content .columns .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 2;
+}
+
+#contacts .content .columns .contact-form .row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+#contacts .content .columns .contact-form .row label {
+    color: #D2D0D0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.row input {
+    background: rgba(210, 208, 208, 0.05);
+    border: none;
+    padding: 20px 25px;
+    font-size: 17px;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.row textarea {
+    background: rgba(210, 208, 208, 0.05);
+    padding: 15px 20px;
+    font-size: 15px;
+    outline: none;
+    line-height: 1.6;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    transition: 0.2s;
+    resize: vertical;
+    overflow-y: auto;
+    min-height: 200px;
+    max-height: 350px;
+    min-width: 100px;
+    justify-content: center;
+}
+
+.row input:focus, .row textarea:focus, .row input:hover, .row textarea:hover {
+    background: rgba(210, 208, 208, 0.2);
+}
+
+#contacts .content .columns .contact-form .form-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: end;
+}
+#contacts .content .columns .contact-form .form-footer button {
+    background: rgb(138, 0, 0);
+    border: 2px solid red;
+    border-radius: 3px;
+    padding: 10px 30px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    gap: 10px;
+}
+
+#contacts .content .columns .contact-form .form-footer button:hover {
+    opacity: 0.8;
+}
+
+#contacts .content .columns .contact-form .form-footer .alert {
+    color: #D2D0D0 ;
+    font-size: 15px;
+}
+
+
+#contacts .content .columns .url {
+    text-decoration: none;
+    height: fit-content;
+}
+
+#contacts .content .columns .url:hover .link .link-description .icon {
+    transform: scale(1.1);
+}
+
+#contacts .content .columns .link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(210, 208, 208, 0.05);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+#contacts .content .columns .link h5 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#contacts .content .columns .link .link-description {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 50px;
+}
+
+#contacts .content .columns .link .link-description .description {
+    color: #D2D0D0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+#contacts .content .columns .link .link-description .description .discord-online-users {
+    color: #4AFF6B;
+}
+
+#contacts .content .columns .link .link-description .icon {
+    border-radius: 5px;
+    background: rgb(138, 0, 0);
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+#contacts .content .columns .link .link-description .icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    position: relative;
+    background: red;
+    color: white;
+    border-radius: 5px;
+}
+
+
+#footer {
+    background: rgba(210, 208, 208, 0.05);
+}
+
+
+@media screen and (max-width: 1625px) {
+    #header .content {
+        padding: 150px 90px;
+    }
+}
+
+@media screen and (max-width: 1361px) {
+    #header .content {
+        flex-direction: column;
+        padding: 120px 90px;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    #header .content {
+        padding: 150px 30px;
+    }
+
+    #header .content .info .minecraft-server-ip {
+        font-size: 15px;
+    }
+
+    #header .content .info .title {
+        font-size: 40px;
+    }
+
+    #header .content .info .description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #header .content {
+        justify-content: start;
+        align-items: start;
+    }
+
+    #header .content .info .title {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1148px) {
+    #contacts .content .columns {
+        flex-direction: column;
+    }
+
+    #contacts .content .columns .url .link {
+        max-width: 100%;
+    }
+
+    #contacts .content .columns .link .link-description {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #contacts .content .columns .contact-form .form-footer {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #contacts .content .columns .contact-form .form-footer button {
+        width: 100%;
+        justify-content: center;
+    }
+}
